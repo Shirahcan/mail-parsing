@@ -1,0 +1,25 @@
+{
+    "name": "shirahcan/mail-parsing",
+    "description": "Turns raw MIME into plain values, for every Shirah product that accepts email. Holds no keys, opens no sockets, stores nothing, and knows nothing about any product.",
+    "type": "library",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.2",
+        "zbateson/mail-mime-parser": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shirahcan\\MailParsing\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shirahcan\\MailParsing\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
